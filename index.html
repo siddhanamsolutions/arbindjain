@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arvind Jain – Enterprise Architect &amp; Corporate Technology Trainer</title>
+<meta name="description" content="Arvind Jain – Enterprise Architect, Corporate Technology Trainer, AI/ML, GenAI & Cloud Transformation Specialist, AWS Certified Solutions Architect.">
+<style>
+  :root{
+    --navy:#1f3864; --blue:#2e75b6; --blue2:#5b9bd5; --blue3:#8faadc;
+    --light:#eaf1fb; --orange:#e8a33d; --rust:#c55a11;
+    --text:#222; --muted:#555; --border:#d6e0ef; --bg:#f4f6fa; --card:#fff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Calibri,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.5}
+  .page{max-width:1000px;margin:24px auto;background:var(--card);box-shadow:0 2px 12px rgba(0,0,0,.08)}
+  header{background:var(--navy);color:#fff;padding:32px 40px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+  header h1{margin:0;font-size:2.4rem;letter-spacing:2px}
+  header .role{font-size:1.15rem;margin:4px 0;color:#dbe6f6}
+  header .spec{color:var(--orange);font-weight:600}
+  .badge{display:inline-block;margin-top:10px;background:var(--orange);color:var(--navy);padding:4px 12px;border-radius:14px;font-weight:700;font-size:.9rem}
+  .contact{font-size:.95rem}
+  .contact h3{margin:0 0 6px;color:var(--orange);font-size:.9rem;letter-spacing:1px}
+  .contact a{color:#fff;text-decoration:none}
+  .contact div{margin:3px 0}
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);background:var(--light);border-bottom:3px solid var(--orange)}
+  .stat{text-align:center;padding:16px 8px;border-right:1px solid var(--border)}
+  .stat:last-child{border-right:0}
+  .stat b{display:block;font-size:1.8rem;color:var(--navy)}
+  .stat span{font-size:.85rem;color:var(--muted)}
+  main{padding:8px 40px 40px}
+  section{margin-top:28px}
+  h2{background:var(--navy);color:#fff;font-size:1.1rem;padding:8px 14px;margin:0 0 16px;border-left:6px solid var(--orange);letter-spacing:.5px}
+  h3.sub{color:var(--navy);margin:20px 0 10px}
+  p{margin:0 0 12px}
+  .pillars{display:grid;grid-template-columns:200px 1fr;border:1px solid var(--border)}
+  .pillars dt{background:var(--light);color:var(--navy);font-weight:700;padding:10px 12px;border-bottom:1px solid var(--border)}
+  .pillars dd{margin:0;padding:10px 12px;border-bottom:1px solid var(--border)}
+  .pillars dt:last-of-type,.pillars dd:last-of-type{border-bottom:0}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .card{border:1px solid var(--border);border-top:4px solid var(--blue);padding:12px;border-radius:4px;background:#fff}
+  .card h4{margin:0 0 6px;color:var(--navy);font-size:1rem}
+  .card p{font-size:.88rem;color:var(--muted);margin:0 0 8px}
+  .card small{color:var(--blue);font-weight:600;font-size:.8rem}
+  .highlights{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+  .highlights li{display:grid;grid-template-columns:32px 230px 1fr;align-items:center;gap:10px;padding:10px 12px;background:var(--light);border-radius:4px}
+  .highlights .ic{font-size:1.3rem;text-align:center}
+  .highlights b{color:var(--navy)}
+  .competencies{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  .competencies li::before{content:"✔ ";color:var(--blue);font-weight:700}
+  table{width:100%;border-collapse:collapse;font-size:.93rem}
+  th{background:var(--blue);color:#fff;text-align:left;padding:8px 10px}
+  td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+  tr:nth-child(even) td{background:#f7faff}
+  td:first-child{font-weight:600;color:var(--navy)}
+  figure{margin:24px 0}
+  figcaption{text-align:center;font-style:italic;color:var(--muted);font-size:.9rem;margin-top:10px}
+  .layers{display:flex;flex-direction:column;gap:8px;max-width:780px;margin:0 auto}
+  .layer{display:grid;grid-template-columns:210px 1fr;gap:8px}
+  .layer .lbl{color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;padding:10px;border-radius:4px}
+  .layer .val{border:1px solid var(--blue);border-radius:4px;padding:8px 12px;font-size:.88rem;background:var(--light)}
+  .layer:nth-child(2){margin-left:4px}.layer:nth-child(3){margin-left:8px}.layer:nth-child(4){margin-left:12px}.layer:nth-child(5){margin-left:16px}
+  .chevrons{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+  .chev{color:#fff;font-weight:700;text-align:center;padding:12px 4px;clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%,12% 50%)}
+  .chev:first-child{clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%)}
+  .chev-desc{text-align:center;font-size:.85rem;color:var(--muted);padding-top:8px}
+  .timeline{position:relative}
+  .tl-row{display:grid;grid-template-columns:260px 1fr;align-items:center;gap:12px;margin-bottom:10px}
+  .tl-role{text-align:right;font-size:.85rem}
+  .tl-role b{color:var(--navy);display:block}
+  .tl-track{position:relative;height:34px;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(14.285% - 1px),#e3e8f0 calc(14.285% - 1px),#e3e8f0 14.285%)}
+  .tl-bar{position:absolute;top:2px;bottom:2px;color:#fff;font-weight:700;font-size:.8rem;display:flex;align-items:center;justify-content:center;border-radius:2px}
+  .tl-axis{display:flex;justify-content:space-between;margin-left:272px;font-size:.78rem;color:var(--muted)}
+  .job{display:grid;grid-template-columns:200px 1fr;border:1px solid var(--border);margin-bottom:16px}
+  .job aside{background:var(--navy);color:#fff;padding:14px}
+  .job aside .yr{font-size:1.1rem;font-weight:700;display:block;margin-bottom:6px}
+  .job aside .co{color:var(--orange);font-weight:700;display:block}
+  .job aside .loc{font-size:.85rem;color:#c9d6ea}
+  .job .body{padding:14px 18px}
+  .job h4{margin:0 0 8px;color:var(--navy);font-size:1.05rem}
+  .job ul{margin:0;padding-left:18px}
+  .job li{margin-bottom:6px}
+  .job li::marker{color:var(--orange)}
+  .declaration{border:1px dashed var(--border);padding:16px;background:#fafbfd}
+  .sign{display:flex;justify-content:space-between;margin-top:16px;flex-wrap:wrap;gap:12px}
+  footer{text-align:center;font-size:.85rem;color:var(--muted);border-top:2px solid var(--orange);padding:12px;margin:0 40px}
+  @media (max-width:800px){
+    header,main{padding-left:16px;padding-right:16px}
+    .stats{grid-template-columns:repeat(3,1fr)}
+    .grid4{grid-template-columns:repeat(2,1fr)}
+    .competencies{grid-template-columns:1fr 1fr}
+    .pillars,.job,.layer{grid-template-columns:1fr}
+    .highlights li{grid-template-columns:32px 1fr}.highlights li span:last-child{grid-column:2}
+    .chevrons{grid-template-columns:repeat(3,1fr)}
+    .tl-row{grid-template-columns:1fr}.tl-role{text-align:left}.tl-axis{margin-left:0}
+    .layer:nth-child(n){margin-left:0}
+    table{display:block;overflow-x:auto}
+    footer{margin:0 16px}
+  }
+  @media (max-width:480px){.grid4,.competencies{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+  @media print{body{background:#fff}.page{box-shadow:none;margin:0}section{break-inside:avoid-page}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <div>
+    <h1>ARVIND JAIN</h1>
+    <div class="role">Enterprise Architect | Corporate Technology Trainer</div>
+    <div class="spec">AI/ML, GenAI &amp; Cloud Transformation Specialist</div>
+    <span class="badge">★ AWS Certified Solutions Architect</span>
+  </div>
+  <div class="contact">
+    <h3>CONTACT</h3>
+    <div>✉ <a href="mailto:arvind@siddhanamtechlabs.com">arvind@siddhanamtechlabs.com</a></div>
+    <div>☎ <a href="tel:+918660078363">+91-8660078363</a></div>
+    <div>Training &amp; consulting — online &amp; onsite</div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><b>25+</b><span>Years in IT</span></div>
+  <div class="stat"><b>15+</b><span>Years of Training</span></div>
+  <div class="stat"><b>100+</b><span>Programs Delivered</span></div>
+  <div class="stat"><b>1000+</b><span>Professionals Trained</span></div>
+  <div class="stat"><b>7</b><span>Industry Domains</span></div>
+</div>
+
+<main>
+
+<section>
+  <h2>PROFESSIONAL SUMMARY</h2>
+  <p>Results-driven Enterprise Architect and Corporate Technology Trainer with 25+ years of experience across software product, solution and IT services companies, and an AWS Certified Solutions Architect. Combines hands-on engineering, architecture, pre-sales and delivery leadership with 15+ years of corporate and institutional training — bridging the gap between emerging technology and real business outcomes across Banking &amp; Finance, Telecom, Retail, Sales, Call Center, Automobile and Healthcare.</p>
+  <dl class="pillars">
+    <dt>▶ Architecture &amp; Transformation</dt>
+    <dd>Leads digital transformation, application modernization and cloud migration of medium and large enterprise applications to AWS and Azure — re-architecting monoliths into scalable, resilient, cost-optimized cloud-native solutions, backed by modern data platforms, Big Data, ETL and MDM.</dd>
+    <dt>▶ Product Engineering &amp; Telecom</dt>
+    <dd>Has built and delivered multiple IT products end to end, including telecom VAS platforms and a mobile chat product integrated with operator networks, plus Enterprise, Web and Mobile applications on Java/J2EE, Spring and Python.</dd>
+    <dt>▶ AI &amp; Emerging Technology</dt>
+    <dd>Designs practical solutions and learning programs in AI/ML, Generative AI and Agentic AI — from predictive analytics and RAG-based assistants to multi-agent workflows — focused on responsible, production-ready adoption.</dd>
+    <dt>▶ Training Leadership</dt>
+    <dd>Delivers high-impact, hands-on programs in Full Stack Java, Python, Data Engineering, DevOps, Cloud, Automated Testing and AI for campus hires, engineers, architects and leadership; simplifies complex concepts through real-world case studies and labs.</dd>
+    <dt>▶ Business &amp; Client Engagement</dt>
+    <dd>Strong pre-sales, solutioning and stakeholder management — translating business needs into technical roadmaps, winning client confidence and building teams that deliver.</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>EXPERTISE AT A GLANCE</h2>
+  <div class="grid4">
+    <div class="card"><h4>AI / ML, GenAI &amp; Agentic AI</h4><p>Predictive models, RAG assistants and multi-agent workflows</p><small>LLMs · LangChain · LangGraph · Bedrock</small></div>
+    <div class="card"><h4>Cloud – AWS &amp; Azure</h4><p>Migration, modernization and cloud-native architecture</p><small>EC2 · Lambda · EKS · Azure · IaC</small></div>
+    <div class="card"><h4>Data Engineering &amp; Big Data</h4><p>Pipelines, data lakes, lakehouse and analytics platforms</p><small>ETL · Spark · Hadoop · Databricks</small></div>
+    <div class="card"><h4>Master Data Management</h4><p>Golden records, data quality and governance</p><small>Customer 360 · Match/Merge · Stewardship</small></div>
+    <div class="card"><h4>Full Stack Development</h4><p>Enterprise, web and mobile application engineering</p><small>Java · Spring Boot · Python · React</small></div>
+    <div class="card"><h4>DevOps &amp; Automated Testing</h4><p>CI/CD, containerization and test automation</p><small>Docker · Kubernetes · Jenkins · Selenium</small></div>
+    <div class="card"><h4>Telecom Products &amp; VAS</h4><p>Operator-integrated VAS and mobile messaging products</p><small>SMS/MMS · USSD · SMPP · Mobile Chat</small></div>
+    <div class="card"><h4>Pre-Sales &amp; Solutioning</h4><p>Solution design, proposals and client engagement</p><small>RFP/RFI · PoCs · Roadmaps · Estimation</small></div>
+  </div>
+</section>
+
+<section>
+  <h2>CAREER HIGHLIGHTS</h2>
+  <ul class="highlights">
+    <li><span class="ic">☁</span><b>AWS Certified Solutions Architect</b><span>Hands-on delivery of cloud migration, cloud-native development and multi-cloud (AWS &amp; Azure) deployments.</span></li>
+    <li><span class="ic">🎓</span><b>100+ Training Programs</b><span>Upskilled 1000+ professionals across 50+ corporate and institutional clients.</span></li>
+    <li><span class="ic">📘</span><b>40+ Curricula Designed</b><span>Bootcamps, lateral upskilling, certification-prep and Train-the-Trainer tracks.</span></li>
+    <li><span class="ic">🤝</span><b>Pre-Sales Impact</b><span>Contributed to multi-million-dollar deal wins through solution design, RFP/RFI responses and PoCs.</span></li>
+    <li><span class="ic">⭐</span><b>4.7 / 5+ Feedback Rating</b><span>Consistently rated for clarity, real-world relevance and lab-driven delivery.</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>CORE COMPETENCIES</h2>
+  <ul class="competencies">
+    <li>Corporate &amp; Institutional Training</li><li>Curriculum &amp; Content Design</li><li>Train-the-Trainer (TTT)</li>
+    <li>Enterprise Architecture &amp; Design</li><li>Digital Transformation</li><li>Application Modernization</li>
+    <li>Cloud Migration Strategy (6R)</li><li>Data Architecture &amp; Engineering</li><li>Master Data Management</li>
+    <li>AI/ML, GenAI &amp; Agentic AI</li><li>Predictive &amp; Content Analytics</li><li>OOAD, Design Patterns &amp; SOA</li>
+    <li>Pre-Sales &amp; Solutioning</li><li>Project Management &amp; Agile Scrum</li><li>Stakeholder &amp; Client Management</li>
+  </ul>
+</section>
+
+<section>
+  <h2>TECHNOLOGY STACK &amp; TECHNICAL SKILLS</h2>
+  <table>
+    <thead><tr><th style="width:24%">Category</th><th>Technologies &amp; Tools</th></tr></thead>
+    <tbody>
+      <tr><td>AI / ML &amp; Analytics</td><td>Supervised &amp; Unsupervised Learning, Deep Learning, NLP, Predictive &amp; Content Analytics, Scikit-learn, TensorFlow, PyTorch, XGBoost, R Language, MLOps (MLflow, SageMaker, Azure ML)</td></tr>
+      <tr><td>Generative &amp; Agentic AI</td><td>LLMs (GPT, Claude, Llama, Gemini), Prompt Engineering, RAG, Vector DBs (Pinecone, FAISS, ChromaDB, OpenSearch), Fine-tuning (LoRA/PEFT), Hugging Face, LangChain, LangGraph, LlamaIndex, CrewAI, AutoGen, MCP, Amazon Bedrock &amp; Agents, Azure OpenAI, Responsible AI</td></tr>
+      <tr><td>AWS Cloud</td><td><b>Compute:</b> EC2, AMIs, Lambda, ECS, EKS • <b>Storage:</b> S3, EBS, EFS • <b>Data:</b> RDS, Aurora, DynamoDB, EMR, Glue, Redshift, Athena, Kinesis • <b>Security &amp; Integration:</b> IAM, KMS, Cognito, API Gateway • <b>Build &amp; Deploy:</b> CodePipeline, CloudFormation, CDK • <b>Migration:</b> Migration Hub, DMS, Well-Architected</td></tr>
+      <tr><td>Microsoft Azure</td><td>Virtual Machines, Blob Storage, App Service, AKS, Functions, Azure SQL, Cosmos DB, Data Factory, Synapse, Databricks, Azure ML, Azure OpenAI, Azure Migrate</td></tr>
+      <tr><td>Programming &amp; Frameworks</td><td>Core Java, J2EE, Spring Core, Spring Boot, Spring Cloud, Microservices, Hibernate/JPA, Struts2, Python (Pandas, NumPy, PySpark, FastAPI, Django), Node.js, .NET, C#, C++, PHP, COBOL</td></tr>
+      <tr><td>Web &amp; Mobile</td><td>HTML5, CSS3, JavaScript, TypeScript, React, Angular/AngularJS, Android, Cordova, Ionic, React Native</td></tr>
+      <tr><td>Integration &amp; Design</td><td>RESTful &amp; SOAP Web Services, SOA, Kafka, Object-Oriented Programming, UML, Core Design Patterns</td></tr>
+      <tr><td>Data Engineering, ETL &amp; MDM</td><td>Data Warehousing, Data Lake &amp; Lakehouse, Dimensional Modeling, ETL/ELT (Informatica, Talend, SSIS, AWS Glue, ADF, dbt), Airflow, Delta Lake, MDM (Informatica MDM, Reltio, IBM InfoSphere), Data Governance</td></tr>
+      <tr><td>Big Data</td><td>Hadoop (HDFS, MapReduce, YARN), Spark, Hive, Pig, HBase, Sqoop, Cloudera, Databricks</td></tr>
+      <tr><td>Databases</td><td>Oracle, DB2, MySQL, MS SQL Server, PostgreSQL, MongoDB, Cassandra, Redis, Snowflake</td></tr>
+      <tr><td>DevOps &amp; Testing</td><td>Docker, Kubernetes, OpenShift, Jenkins, Git, GitHub, Terraform, Ansible, SonarQube, JUnit, Mockito, PyTest, Selenium</td></tr>
+      <tr><td>Servers, OS &amp; Networking</td><td>IBM WebSphere, Oracle WebLogic, JBoss, Apache Tomcat • Linux, Windows, Sun Solaris, SCO Unix • TCP/IP, UDP, HTTP, SMTP</td></tr>
+      <tr><td>Tools &amp; Version Control</td><td>Eclipse IDE, Jira, Confluence, CVS, Subversion, VSS, IBM ClearCase, IBM RTC</td></tr>
+      <tr><td>BI &amp; Visualization</td><td>Power BI, Tableau, Amazon QuickSight, Advanced Excel</td></tr>
+    </tbody>
+  </table>
+
+  <figure>
+    <div class="layers">
+      <div class="layer"><div class="lbl" style="background:#1f3864">AI &amp; Intelligence</div><div class="val">ML · Deep Learning · LLMs · RAG · Agentic AI (LangChain, LangGraph, CrewAI) · Bedrock · Azure OpenAI</div></div>
+      <div class="layer"><div class="lbl" style="background:#2f5597">Applications</div><div class="val">Java/J2EE · Spring Boot · Microservices · Python · Node.js · .NET · React/Angular · Android</div></div>
+      <div class="layer"><div class="lbl" style="background:#2e75b6">Integration</div><div class="val">REST &amp; SOAP · SOA · Kafka · API Gateway · SMPP/USSD Telecom Gateways</div></div>
+      <div class="layer"><div class="lbl" style="background:#5b9bd5">Data &amp; Analytics</div><div class="val">ETL/ELT · Data Lake &amp; Lakehouse · Hadoop/Spark · MDM · Oracle/DB2/NoSQL · Power BI/Tableau</div></div>
+      <div class="layer"><div class="lbl" style="background:#8faadc">Cloud &amp; DevOps</div><div class="val">AWS · Azure · Docker · Kubernetes · OpenShift · Terraform · Jenkins · Automated Testing</div></div>
+    </div>
+    <figcaption>Figure 1 – Technology stack, layered from cloud infrastructure up to AI</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>TRAINING PORTFOLIO</h2>
+  <table>
+    <thead><tr><th style="width:24%">Program / Track</th><th>Focus Areas</th><th style="width:24%">Target Audience</th></tr></thead>
+    <tbody>
+      <tr><td>Generative AI &amp; Agentic AI</td><td>LLM fundamentals, prompt engineering, RAG, building and orchestrating AI agents, Responsible AI</td><td>Developers, Architects, Leadership</td></tr>
+      <tr><td>AI / Machine Learning</td><td>Python for ML, ML algorithms, deep learning, predictive analytics, model deployment &amp; MLOps</td><td>Data Scientists, Engineers</td></tr>
+      <tr><td>AWS &amp; Azure Cloud</td><td>Cloud fundamentals, Solutions Architect certification prep, serverless, containers, IaC</td><td>Freshers to Architects</td></tr>
+      <tr><td>Cloud Migration &amp; Modernization</td><td>Assessment, 6R strategy, monolith-to-microservices, performance &amp; cost optimization</td><td>Architects, Tech Leads</td></tr>
+      <tr><td>Full Stack Java</td><td>Core/Advanced Java, Spring Boot microservices, REST/SOAP, Hibernate, front end, CI/CD</td><td>Campus Hires, Laterals</td></tr>
+      <tr><td>Python &amp; Data Engineering</td><td>Python, SQL, PySpark, pipelines, lakehouse, Big Data (Hadoop/Spark)</td><td>Data Engineers, Analysts</td></tr>
+      <tr><td>ETL, Data Warehousing &amp; MDM</td><td>ETL design, dimensional modeling, MDM architecture, data governance &amp; stewardship</td><td>ETL Developers, Data Architects</td></tr>
+      <tr><td>DevOps &amp; Containers</td><td>CI/CD pipelines, Docker, Kubernetes, OpenShift, infrastructure as code</td><td>Developers, Ops Teams</td></tr>
+      <tr><td>Automated Testing</td><td>Unit, integration and UI test automation, test frameworks in CI pipelines</td><td>Developers, QA Engineers</td></tr>
+      <tr><td>OOAD &amp; Architecture</td><td>OOP, UML, core design patterns, SOA, Agile methodology</td><td>Developers, Designers</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">Training Delivery Approach</h3>
+  <div class="chevrons">
+    <div><div class="chev" style="background:#1f3864">Assess</div><div class="chev-desc">Skill-gap &amp; pre-assessment</div></div>
+    <div><div class="chev" style="background:#2f5597">Design</div><div class="chev-desc">Custom curriculum &amp; labs</div></div>
+    <div><div class="chev" style="background:#2e75b6">Deliver</div><div class="chev-desc">ILT / VILT &amp; bootcamps</div></div>
+    <div><div class="chev" style="background:#5b9bd5">Practice</div><div class="chev-desc">60–70% hands-on labs &amp; capstones</div></div>
+    <div><div class="chev" style="background:#e8a33d">Evaluate</div><div class="chev-desc">Post-assessment &amp; feedback</div></div>
+    <div><div class="chev" style="background:#c55a11">Sustain</div><div class="chev-desc">Mentoring &amp; TTT support</div></div>
+  </div>
+
+  <table style="margin-top:20px">
+    <thead><tr><th style="width:24%">Delivery Aspect</th><th>Details</th></tr></thead>
+    <tbody>
+      <tr><td>Formats</td><td>Instructor-led classroom, virtual instructor-led (VILT), corporate bootcamps (4–16 weeks), workshops, hackathons, certification boot camps</td></tr>
+      <tr><td>Learning Model</td><td>60–70% hands-on labs, capstone projects and domain-specific case studies</td></tr>
+      <tr><td>Measurement</td><td>Pre/post assessments, skill-gap analysis, participant feedback and outcome reports</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>PROFESSIONAL EXPERIENCE</h2>
+  <figure>
+    <div class="timeline">
+      <!-- axis 2005–2026 = 21 years; left% = (start-2005)/21*100 -->
+      <div class="tl-row"><div class="tl-role"><b>Corporate Technology Trainer &amp; Consultant</b>Ohio Computer Academy</div><div class="tl-track"><div class="tl-bar" style="left:28.57%;width:71.43%;background:var(--orange)">2011–Present</div></div></div>
+      <div class="tl-row"><div class="tl-role"><b>Enterprise Architect – Cloud, Data &amp; DX</b>Persistent Systems Ltd</div><div class="tl-track"><div class="tl-bar" style="left:47.62%;width:52.38%;background:var(--navy)">2015–2026</div></div></div>
+      <div class="tl-row"><div class="tl-role"><b>Architect / Pre-Sales &amp; Sales Expert</b>Cibersite India Pvt Ltd</div><div class="tl-track"><div class="tl-bar" style="left:23.81%;width:23.81%;background:var(--blue)">2010–2015</div></div></div>
+      <div class="tl-row"><div class="tl-role"><b>Architect / Technical Project Manager</b>ACL Wireless Ltd.</div><div class="tl-track"><div class="tl-bar" style="left:9.52%;width:14.29%;background:var(--blue2)">2007–2010</div></div></div>
+      <div class="tl-row"><div class="tl-role"><b>Project Leader / Sr. Software Engineer</b>MIND</div><div class="tl-track"><div class="tl-bar" style="left:0;width:9.52%;background:var(--blue3)">2005–2007</div></div></div>
+      <div class="tl-axis"><span>2005</span><span>2008</span><span>2011</span><span>2014</span><span>2017</span><span>2020</span><span>2023</span><span>2026</span></div>
+    </div>
+    <figcaption>Figure 2 – Career timeline (training practice runs in parallel with architecture roles since 2011)</figcaption>
+  </figure>
+
+  <article class="job">
+    <aside><span class="yr">2011 – Present</span><span class="co">Ohio Computer Academy</span><span class="loc">Dublin, OH (Remote)</span></aside>
+    <div class="body"><h4>Corporate Technology Trainer &amp; Consultant</h4><ul>
+      <li>Design and deliver corporate and institutional training on AI/ML, Full Stack Java, Python, DevOps, Cloud Migration, AWS, Azure, Automated Testing, GenAI, Agentic AI, Data Engineering, ETL, Big Data and MDM for IT services firms, GCCs, banks, telecom operators and product companies.</li>
+      <li>Built 40+ end-to-end curricula with lab manuals, assessments and capstone projects aligned to client competency frameworks and industry certifications.</li>
+      <li>Run large campus-to-corporate bootcamps (100–300 participants per batch) and AWS Solutions Architect certification-prep programs with strong first-attempt pass rates.</li>
+      <li>Launched GenAI and Agentic AI enablement programs that help enterprise teams move from experimentation to production use cases.</li>
+      <li>Advise clients on cloud migration roadmaps, data platform architecture and application modernization; mentor in-house trainers through TTT programs.</li>
+    </ul></div>
+  </article>
+
+  <article class="job">
+    <aside><span class="yr">2015 – 2026</span><span class="co">Persistent Systems Ltd</span><span class="loc">Bangalore, India</span></aside>
+    <div class="body"><h4>Enterprise Architect – Cloud, Data &amp; Digital Transformation</h4><ul>
+      <li>Led architecture for digital transformation and modernization programs across Banking, Telecom, Retail and Healthcare clients; implemented multiple IT products in multi-domain environments.</li>
+      <li>Developed and migrated medium and large enterprise and web applications to AWS, optimizing them for performance, scalability, resilience and cost effectiveness.</li>
+      <li>Architected enterprise data platforms — data warehouses, Hadoop-based data lakes and MDM hubs — enabling Customer 360, predictive analytics and content analytics.</li>
+      <li>Owned pre-sales technical solutioning: RFP/RFI responses, estimation, solution blueprints, client presentations and PoCs.</li>
+    </ul></div>
+  </article>
+
+  <article class="job">
+    <aside><span class="yr">2010 – 2015</span><span class="co">Cibersite India Pvt Ltd</span><span class="loc">Bangalore, India</span></aside>
+    <div class="body"><h4>Architect / Pre-Sales &amp; Sales Expert</h4><ul>
+      <li>Drove pre-sales and solution sales for enterprise products (CRM, Sales Force Automation, Billing, Banking) across Banking &amp; Finance, Telecom, Call Center and Retail verticals.</li>
+      <li>Conducted product demonstrations, requirement-discovery workshops and solution fitment studies; fed market requirements into product roadmaps.</li>
+      <li>Delivered customer and partner product training — the foundation of a later full-time training career.</li>
+    </ul></div>
+  </article>
+
+  <article class="job">
+    <aside><span class="yr">2007 – 2010</span><span class="co">ACL Wireless Ltd.</span><span class="loc">Noida, India</span></aside>
+    <div class="body"><h4>Architect / Technical Project Manager</h4><ul>
+      <li><b>Telecom VAS solutioning:</b> Architected and delivered mobile Value Added Services for telecom operators — SMS/MMS alerts and subscriptions, short-code and keyword campaigns, USSD menus, IVR, WAP portals and mobile content downloads.</li>
+      <li><b>Mobile Chat product:</b> Led design and development of a mobile chat and messaging product supporting SMS and WAP/GPRS chat, user profiles, chat rooms and subscription billing, scaled for high concurrent usage.</li>
+      <li><b>Telecom integration:</b> Integrated platforms with operator infrastructure — SMSC (SMPP), USSD and WAP gateways, MMSC and charging/billing systems — with high-throughput, carrier-grade message processing.</li>
+      <li><b>Product development:</b> Built service delivery components on Java/J2EE, Spring, Hibernate and Oracle, with a reusable framework that cut rollout time for new VAS services.</li>
+      <li><b>Solutioning &amp; pre-sales:</b> Prepared technical proposals, solution architectures and estimates for operator and enterprise clients; ran product demos and requirement workshops.</li>
+      <li><b>Technical project management:</b> Managed end-to-end delivery — planning, estimation, risk and release management, UAT with operators, production rollout and support.</li>
+    </ul></div>
+  </article>
+
+  <article class="job">
+    <aside><span class="yr">2005 – 2007</span><span class="co">MIND</span><span class="loc">Noida, India</span></aside>
+    <div class="body"><h4>Project Leader / Senior Software Engineer</h4><ul>
+      <li>Designed, developed and deployed Enterprise, Web and Mobile applications using Java/J2EE, Struts, Spring, Hibernate, Oracle and DB2 on WebSphere, WebLogic and Unix platforms.</li>
+      <li>Built core banking modules, telecom billing and call-center interfaces, retail POS integrations and automobile-sector sales applications.</li>
+      <li>Led teams of 6–12 developers across the full SDLC, including code reviews, release management and production support.</li>
+    </ul></div>
+  </article>
+</section>
+
+<section>
+  <h2>KEY PROJECTS</h2>
+  <table>
+    <thead><tr><th>Project</th><th>Domain</th><th>Technology</th><th>Outcome</th></tr></thead>
+    <tbody>
+      <tr><td>GenAI Knowledge Assistant</td><td>BFSI</td><td>Amazon Bedrock, OpenSearch vector search, RAG</td><td>Answers policy and product queries for banking operations staff</td></tr>
+      <tr><td>Agentic AI Ticket Automation</td><td>Telecom</td><td>LangGraph, LLM tool calling</td><td>Triages tickets, queries billing systems and drafts resolutions with human-in-the-loop review</td></tr>
+      <tr><td>Core Banking Modernization</td><td>Banking</td><td>Spring Boot microservices, AWS EKS, API Gateway, CI/CD</td><td>Monolithic J2EE app re-architected; faster releases and better scalability</td></tr>
+      <tr><td>Mobile VAS &amp; Chat Platform</td><td>Telecom</td><td>Java/J2EE, SMPP, USSD &amp; WAP gateways</td><td>Operator-integrated VAS and mobile chat services with subscription billing</td></tr>
+      <tr><td>Telecom Data Lake &amp; Analytics</td><td>Telecom</td><td>Hadoop, Spark, cloud lakehouse</td><td>CDR and customer data platform enabling churn and predictive analytics</td></tr>
+      <tr><td>Retail Customer &amp; Product MDM</td><td>Retail</td><td>MDM hub, ETL, BI</td><td>Customer 360 / Product 360 with match/merge, survivorship and stewardship</td></tr>
+      <tr><td>Data Center to AWS Migration</td><td>Cross-industry</td><td>AWS Migration Hub, DMS, landing zone</td><td>100+ applications migrated with security baselining and cost optimization</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>DOMAIN EXPERTISE</h2>
+  <table>
+    <thead><tr><th style="width:24%">Industry</th><th>Key Areas</th></tr></thead>
+    <tbody>
+      <tr><td>Banking &amp; Finance</td><td>Core banking, payments, loans, wealth management, risk &amp; compliance, KYC/AML</td></tr>
+      <tr><td>Telecom &amp; Call Center</td><td>Billing &amp; rating, CDR processing, OSS/BSS, provisioning, VAS, CRM, contact-center applications</td></tr>
+      <tr><td>Retail, Sales &amp; Distribution</td><td>POS, inventory &amp; supply chain, e-commerce, loyalty, Sales Force Automation, dealer management</td></tr>
+      <tr><td>Automobile</td><td>Parts management system, dealer and sales management systems</td></tr>
+      <tr><td>Healthcare</td><td>Patient and clinical data systems, healthcare data analytics</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>EDUCATION &amp; CERTIFICATIONS</h2>
+  <table>
+    <thead><tr><th>Qualification</th><th>Institution / Issuer</th><th>Type</th></tr></thead>
+    <tbody>
+      <tr><td>AWS Certified Solutions Architect</td><td>Amazon Web Services</td><td>Certification</td></tr>
+      <tr><td>Master of Computer Applications (MCA)</td><td>Maharishi Dayanand University, Rohtak, India</td><td>Post-Graduation</td></tr>
+      <tr><td>Bachelor of Science (B.Sc.)</td><td>Govt. Science Autonomous College, Gwalior, India</td><td>Graduation</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>PERSONAL DETAILS</h2>
+  <table>
+    <thead><tr><th style="width:24%">Detail</th><th>Information</th></tr></thead>
+    <tbody>
+      <tr><td>Languages</td><td>English, Hindi</td></tr>
+      <tr><td>Availability</td><td>Corporate &amp; institutional training and consulting — online and onsite</td></tr>
+    </tbody>
+  </table>
+</section>
+
+</main>
+<footer>Arvind Jain | Enterprise Architect &amp; Corporate Technology Trainer</footer>
+</div>
+</body>
+</html>
